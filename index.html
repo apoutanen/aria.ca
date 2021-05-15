@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aria.ca</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+	<div id="background" class="green">
+		<p id="words" class="pink">aria.ca</p>
+	</div>
+	<script>
+		debugger;
+		document.getElementById("words").addEventListener("mouseover", function () {
+			document.getElementById("words").className = "green";
+			document.getElementById("background").className = "pink";
+		});
+		document.getElementById("words").addEventListener("mouseout", function () {
+			document.getElementById("words").className = "pink";
+			document.getElementById("background").className = "green";
+		});
+
+	</script>
+</body>
+</html>
